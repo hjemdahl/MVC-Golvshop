@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Admin";
+}
+@{
+    IEnumerable<MVC.Golvshop.Models.OrderModel> JsonList = (IEnumerable<MVC.Golvshop.Models.OrderModel>)ViewBag.list;
+}
+
+<!-- Print all orders-->
+@foreach (var om in JsonList)
+{
+<ul class="admin-list">
+    <li><span class="thick">Namn:</span>@om.FirstName @om.LastName</li>
+    <li><span class="thick">Kontakt via:</span>@om.ContactOption</li>
+    <li><span class="thick">Telefonnummer:</span>@om.PhoneNumber</li>
+    <li><span class="thick">E-mail:</span>@om.Email</li>
+    <li><span class="thick">Gata:</span>@om.Street</li>
+    <li><span class="thick">Postnummer:</span>@om.ZipCode</li>
+    <li><span class="thick">Ort:</span>@om.City</li>
+    <li><span class="thick">Golv:</span>@om.Floor</li>
+    <li><span class="thick">Kvm:</span>@om.Kvm</li>
+    <li><span class="thick">Pris(kr/kvm):</span>@om.PriceKvm</li>
+    <li><span class="thick">Total pris(kr):</span>@om.TotalPrice</li>
+</ul>
+}

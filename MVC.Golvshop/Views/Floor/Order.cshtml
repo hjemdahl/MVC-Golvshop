@@ -1,0 +1,62 @@
+﻿@model MVC.Golvshop.Models.OrderModel
+@{
+    ViewBag.Title = "Gör en beställning";
+}
+
+<nav>
+    @Html.Partial("_partial-menu")
+</nav>
+
+<h2>Beställa golv</h2>
+<p>Fyll i informationen och klicka hem ditt golv, så enkelt är det. Vi räknar ut kvadratmetern och priset utifrån dina uppgiter.</p>
+
+<!-- Form for OrderModel -->
+<form method="post">
+    <div asp-validation-summary="ModelOnly"></div>
+    <label asp-for="Floor" for="Floor">Välj ditt golv</label>
+    <select asp-for="Floor" name="Floor" id="Floor">
+        <option value="Gold">Gold</option>
+        <option value="Dark">Dark</option>
+        <option value="Gray">Gray</option>
+    </select>
+
+    <p class="form-info">Ange läng och bredd på rummet golvet ska ligga i:</p>
+
+    <label asp-for="Length"></label>
+    <input class="text-input" asp-for="Length" />
+    <span class="error-msg" asp-validation-for="Length"></span>
+    <label asp-for="Width"></label>
+    <input class="text-input" asp-for="Width" />
+    <span class="error-msg" asp-validation-for="Width"></span>
+    <label asp-for="FirstName"></label>
+    <input class="text-input" asp-for="FirstName" />
+    <span class="error-msg" asp-validation-for="FirstName"></span>
+    <label asp-for="LastName"></label>
+    <input class="text-input" asp-for="LastName" />
+    <span class="error-msg" asp-validation-for="LastName"></span>
+    <label asp-for="PhoneNumber"></label>
+    <input class="text-input" asp-for="PhoneNumber" />
+    <span class="error-msg" asp-validation-for="PhoneNumber"></span>
+    <label asp-for="Email"></label>
+    <input class="text-input" asp-for="Email" />
+    <span class="error-msg" asp-validation-for="Email"></span>
+    <label asp-for="Street"></label>
+    <input class="text-input" asp-for="Street" />
+    <span class="error-msg" asp-validation-for="Street"></span>
+    <label asp-for="ZipCode"></label>
+    <input class="text-input" asp-for="ZipCode" />
+    <span class="error-msg" asp-validation-for="ZipCode"></span>
+    <label asp-for="City"></label>
+    <input class="text-input" asp-for="City" />
+    <span class="error-msg" asp-validation-for="City"></span>
+
+    <p class="form-info">Hur vill du att vi ska kontakta dig?</p>
+    <div class="radio">
+        <input asp-for="ContactOption" type="radio" name="ContactOption" value="Telefon" checked />
+        <label for="phone">Telefon</label>
+        <input asp-for="ContactOption" type="radio" name="ContactOption" value="E-mail" />
+        <label for="email">E-mail</label>
+    </div>
+
+    <input class="button" type="submit" value="Beställ" />
+</form>

@@ -1,0 +1,207 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: dimgray;
+}
+/****** Header ******/
+h1 {
+    font-family: "Kaushan Script";
+    font-size: 3em;
+    text-align: center;
+    letter-spacing: .1em;
+    margin: 70px 0px 30px 0px;
+    color: papayawhip;
+}
+/****** Partial ******/
+
+.menu {
+    margin: 0px auto;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+}
+.menu li {
+    margin: 0px 15px;
+}
+.menu li a {
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: darkgray;
+}
+.menu li a:hover {
+    color: goldenrod;
+}
+/****** Shared ******/
+.pages {
+    margin: 0px 20%;
+}
+h2 {
+    font-family: "Kaushan Script";
+    margin: 80px 0px 0px 30px;
+    color: papayawhip;
+}
+p {
+    font-family: "Montserrat";
+    color: darkgray;
+    margin: 8px 0px 0px 32px;
+}
+/****** Index ******/
+.index-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.floors {
+    margin: 30px 10px;
+}
+.floor-img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 5px;
+    border: 4px solid darkgray;
+}
+.floor-text {
+    text-align: center;
+    margin-top: 15px;
+    font-family: "Montserrat";
+    color: darkgray;
+}
+.btn {
+    width: 80px;
+    margin-top: 20px;
+}
+/****** Order ******/
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 20px 30px;
+    max-width: 500px;
+    font-family: "Montserrat";
+}
+.form-info {
+    margin: 13px 0px 5px 2px;
+}
+label {
+    color: papayawhip;
+    margin: 10px 0px 5px 2px;
+}
+.text-input {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: snow;
+}
+.error-msg {
+    font-size: .8em;
+    color: darkorange;
+    margin:4px 0px 0px 2px;
+}
+select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: snow;
+}
+.radio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0px 20px 0px;
+
+}
+.radio label {
+    margin: 0px 25px 0px 5px;
+}
+.button {
+    max-width: 100px;
+    margin-top: 10px;
+    padding: 6px 0px;
+    border-radius: 5px;
+    background-color: snow;
+}
+/****** Confirmation ******/
+.confirmation-list {
+    list-style: none;
+    margin: 15px 30px 30px 32px;
+    background-color: ivory;
+    padding: 15px 15px;
+    border-radius: 5px;
+    border: 2px solid darkgray;
+}
+.confirmation-list li {
+    margin-bottom: 7px;
+    font-family: "Montserrat";
+    color: black;
+}
+.thick {
+    font-weight: 900;
+    margin-right: 7px;
+}
+.exit-btn {
+    text-decoration: none;
+    font-family: "Montserrat";
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    color: black;
+    background-color: gray;
+    margin-left:32px;
+}
+.exit-btn:hover {
+    color: papayawhip;
+}
+/****** Admin ******/
+.admin-list {
+    list-style: none;
+    margin: 15px 30px 30px 32px;
+}
+.admin-list li {
+    margin-bottom: 7px;
+    font-family: "Montserrat";
+    color: black;
+}
+/****** Footer ******/
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 100px;
+}
+footer {
+    font-family: "Montserrat";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 70px;
+}
+footer p {
+    color: darkgray;
+    text-align: center;
+}
+footer p a {
+    text-decoration: none;
+    font-family: "Montserrat";
+    color: darkgray;
+    margin-left: 15px;
+}
+/****** Media querys ******/
+@media (max-width: 1130px) {
+    .pages {
+        margin: 0px 15%;
+    }
+}
+@media (max-width: 980px) {
+    .index-content {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .floors {
+        margin: 30px 10px 0px 10px;
+    }
+}

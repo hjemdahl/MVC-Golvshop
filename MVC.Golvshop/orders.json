@@ -1,0 +1,34 @@
+[
+  {
+    "Floor": "Dark",
+    "PriceKvm": 149,
+    "Kvm": 15,
+    "TotalPrice": 2235,
+    "Length": 3,
+    "Width": 5,
+    "FirstName": "Hans",
+    "LastName": "Hansson",
+    "PhoneNumber": "0701112223",
+    "Email": "hh@gmail.com",
+    "Street": "Hansgata 2",
+    "ZipCode": "11223",
+    "City": "Hansdal",
+    "ContactOption": "E-mail"
+  },
+  {
+    "Floor": "Gold",
+    "PriceKvm": 149,
+    "Kvm": 96,
+    "TotalPrice": 14304,
+    "Length": 8,
+    "Width": 12,
+    "FirstName": "Tina",
+    "LastName": "Timmerman",
+    "PhoneNumber": "0735556667",
+    "Email": "tt@hotmail.com",
+    "Street": "Timmerleden 5",
+    "ZipCode": "97598",
+    "City": "Timmerholm",
+    "ContactOption": "Telefon"
+  }
+]

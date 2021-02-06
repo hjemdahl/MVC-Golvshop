@@ -1,0 +1,24 @@
+﻿@model MVC.Golvshop.Models.OrderModel
+@{
+    ViewBag.Title = "Bekräftelse";
+}
+
+<h2>Din beställning</h2>
+
+<!-- Print order confirmation -->
+<ul class="confirmation-list">
+    <li><span class="thick">@Html.DisplayNameFor(model => model.Floor):</span>@Html.DisplayFor(model => model.Floor)</li>
+    <li><span class="thick">@Html.DisplayNameFor(model => model.PriceKvm):</span>@Html.DisplayFor(model => model.PriceKvm)</li>
+    <li><span class="thick">@Html.DisplayNameFor(model => model.Kvm):</span>@Html.DisplayFor(model => model.Kvm)</li>
+    <li><span class="thick">@Html.DisplayNameFor(model => model.TotalPrice):</span>@Html.DisplayFor(model => model.TotalPrice)</li>
+    <li><span class="thick">Namn:</span>@Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName)</li>
+    <li><span class="thick">@Html.DisplayNameFor(model => model.PhoneNumber):</span>@Html.DisplayFor(model => model.PhoneNumber)</li>
+    <li><span class="thick">@Html.DisplayNameFor(model => model.Email):</span>@Html.DisplayFor(model => model.Email)</li>
+    <li><span class="thick">@Html.DisplayNameFor(model => model.Street):</span>@Html.DisplayFor(model => model.Street)</li>
+    <li><span class="thick">@Html.DisplayNameFor(model => model.ZipCode):</span>@Html.DisplayFor(model => model.ZipCode)</li>
+    <li><span class="thick">@Html.DisplayNameFor(model => model.City):</span>@Html.DisplayFor(model => model.City)</li>
+    <li><span class="thick">@Html.DisplayNameFor(model => model.ContactOption):</span>@Html.DisplayFor(model => model.ContactOption)</li>
+    <li><span class="thick">Beräknat leveransdatum:</span>@ViewData["DeliveryDate"]</li>
+</ul>
+
+<a class="exit-btn" asp-controller="Floor" asp-action="Index">Stäng</a>

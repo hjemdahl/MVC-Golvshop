@@ -1,0 +1,20 @@
+﻿@model MVC.Golvshop.Models.ViewModel
+@{
+    ViewBag.Title = "Hem";
+}
+<nav>
+    @Html.Partial("_partial-menu")
+</nav>
+
+<h2>Våra golv</h2>
+<p>Vi levererar kvalitetsgolv till dig, alla för fantastiska 149kr/kvm. Nedan hittar du våra olika varianter.</p>
+<div class="index-content">
+    <!-- Print list of floors -->
+    @foreach (MVC.Golvshop.Models.FloorModel fm in Model.FloorList)
+    {
+        <div class="floors">
+            <img class="floor-img" src="~/@fm.Img" />
+            <h4 class="floor-text">@fm.Color</h4>
+        </div>
+    }
+</div>
